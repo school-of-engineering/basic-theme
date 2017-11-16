@@ -74,16 +74,11 @@ register_post_type( 'car', $car_args );
 
  /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  *
- * add a widget area to dashboard - Appearance - Widgets
+ * add a widget area to Dashboard - Appearance - Widgets
  */
  $widget_args = array(
    'id'            => 'singular-widget',
    'name'          => 'Page or Single widgets',
  );
  register_sidebar( $widget_args );
-
-
-add_action('init', )
-
-
 ?>
