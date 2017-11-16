@@ -1,15 +1,30 @@
 <?php
-// Add a menu location
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*
+* Add a menu location
+*/
 register_nav_menu('main', 'The Main menu' );
 
-// Add theme support for automatic title tags ans featured images
-add_theme_support('title-tag');
-add_theme_support('post-thumbnail');
 
-// add a custom image resize upon upload
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*
+* Add theme support for automatic title tags and featured images
+*/
+add_theme_support('title-tag');
+add_theme_support('post-thumbnails');
+
+
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*
+* add a custom image resize upon upload
+*/
 add_image_size('grid_thumb', 100, 100, true);
 
-// add a custom post type for cars
+
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*
+* add a custom post type for cars
+*/
 $car_args = array(
         'public'              => true, // bool (default is FALSE)
         'menu_position'       => 5, // int (defaults to 25 - below comments)
@@ -30,7 +45,11 @@ $car_args = array(
 
 register_post_type( 'car', $car_args );
 
-//add custom taxonomies for the cars: brand and features
+
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*
+* add custom taxonomies for the cars: brand and features
+*/
  $brand_args = array(
    'label'                     => 'Brand',
    'hierarchical'               => true,
@@ -52,10 +71,19 @@ register_post_type( 'car', $car_args );
  register_taxonomy( 'feature', 'car', $feature_args );
  // register_taxonomy( taxonomy_name, available_for_which_post_type, Settings )
 
- // add a widget area to dashboard - Appearance - Widgets
+
+ /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *
+ * add a widget area to dashboard - Appearance - Widgets
+ */
  $widget_args = array(
    'id'            => 'singular-widget',
    'name'          => 'Page or Single widgets',
  );
  register_sidebar( $widget_args );
+
+
+add_action('init', )
+
+
 ?>

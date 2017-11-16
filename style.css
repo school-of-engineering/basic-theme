@@ -10,11 +10,11 @@ a, a:link, link:visited, link:hover, link:active{
       color: #69797F;
       text-decoration: none;
 }
-.menu-top-container {
+nav>div {
     background-color: #fafafa;
     border: solid 2px #eee;
 }
-#menu-top {
+nav>div>ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
