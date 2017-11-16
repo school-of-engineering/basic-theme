@@ -1,0 +1,45 @@
+/*
+Theme Name: Portfolio theme
+Author: Johan Kohlin
+Description: A lab assignment
+*/
+body {
+  font-family: sans-serif;
+}
+a, a:link, link:visited, link:hover, link:active{
+      color: #69797F;
+      text-decoration: none;
+}
+.menu-top-container {
+    background-color: #fafafa;
+    border: solid 2px #eee;
+}
+#menu-top {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menu-item{
+  display: inline-block;
+}
+.menu-item a{
+  display: block;
+  padding: 20px 10px;
+}
+.current-menu-item a {
+  background-color: #eee;
+  text-decoration: none;
+}
+.menu-item a:hover {
+  background-color: #fff;
+  text-decoration: underline;
+}
+h1{
+  text-align: center;
+  border-bottom: solid 1px #69797F;
+  margin: 10px 10%;
+}
+section main{
+  width: 80%;
+  margin: auto;
+}
